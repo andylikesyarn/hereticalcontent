@@ -1,0 +1,63 @@
+body {
+  width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+p,
+h1 {
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.intro-text {
+  background-color: #90d5ff;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.hidden {
+  display: none;
+}
+
+.about-button,
+.hide-button {
+  float: left;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+  font-size: 3rem;
+}
+
+.card {
+  padding-top: 1rem;
+  margin: 1rem;
+}
+
+.card-image {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-left: -10rem;
+}
+.card {
+  background-color: rgb(189, 189, 236);
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.card-image {
+  margin: 0 auto;
+}
