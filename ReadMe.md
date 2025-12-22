@@ -12,38 +12,34 @@ top left image returns to home
 
 ### TV feature
 
+- [ ] video playback
+- [ ] tv alignment
+- [x] about / hide button
+
 ### Books feature
+
+- [ ] format cards
+- [ ] align cards
+- [ ] align within card
 
 ### music feature
 
+The music feature has several moving parts:
+
+1. An image of a tape deck (designed and edited in Canva.)
+2. A text overlay that says "click for music"
+3. the soundcloud popup that shows music and allows selection
+
 ### gallery link
 
+- [x] Enable next/prev buttons
+- [x] correct Marcion's position
+- [ ] correct card alignment
+- [ ] format details section 
+- [x] about feature
+
 ### slideshow link link
-
-## Volume 3 Gallery Page
-
-## To Do
-
-### gen
-
-- [ ] push to github
-- [x] Fix default aspect rtio
-- [x] add media queries for mobile and half
-
-### Art
-
-- [ ] Enable next/prev buttons
 
 ### Data Storage
 
 - [ ] Figure out how to EITHER store or embed the videos
-
-### Music Player
-
-- [x] add label to cassette player
-
-### book reports
-
-- [x] position book buttons
-- [x] fix size of popup
-- [x] add book titles, authors, and link to popup

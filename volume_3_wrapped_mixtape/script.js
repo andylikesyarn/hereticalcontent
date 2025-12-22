@@ -215,10 +215,12 @@ hideButton.addEventListener("click", (e) => {
   hideButton.classList.toggle("hidden");
   aboutButton.classList.toggle("hidden");
   introText.classList.toggle("hidden");
+  console.log("button was clicked");
 });
 
 aboutButton.addEventListener("click", (e) => {
   hideButton.classList.toggle("hidden");
   aboutButton.classList.toggle("hidden");
   introText.classList.toggle("hidden");
+  console.log("button was clicked");
 });

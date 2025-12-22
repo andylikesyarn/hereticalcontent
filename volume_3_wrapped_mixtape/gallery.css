@@ -1,5 +1,5 @@
 body {
-  width: 700px;
+  width: 600px;
   text-align: center;
   margin: 0 auto;
   background-color: white;
@@ -27,14 +27,11 @@ h1 {
   float: left;
 }
 
-.previous {
+.previous,
+.next {
   background-color: #f1f1f1;
   color: black;
-}
-
-.next {
-  background-color: #04aa6d;
-  color: white;
+  height: 100px;
 }
 
 .round {
@@ -45,11 +42,7 @@ h1 {
 .card {
   padding-top: 1rem;
   margin: 1rem;
-
-  background-color: #90d5ff;
   padding: 2rem;
-  border: 2px solid black;
-  max-width: 500px;
 }
 
 .card-image {
@@ -260,10 +253,10 @@ h1 {
 .close-button {
 }
 
-.back-to-home {
-  max-width: 400px;
+.marcion {
+  max-width: 200px;
   float: left;
-  margin-left: -70%;
+  margin-left: -45%;
 }
 
 .art-ticket {
@@ -389,4 +382,8 @@ h1 {
 }
 .art-image img {
   max-width: 600px;
+}
+
+.gallery-grid {
+  display: flex;
 }

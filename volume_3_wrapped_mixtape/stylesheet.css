@@ -289,10 +289,6 @@ h1 {
   left: 45%;
 }
 
-.about-button,
-.hide-button {
-  float: left;
-}
 .all-channels {
   margin: 0;
   padding: 0;
@@ -416,7 +412,19 @@ h1 {
 }
 
 @media screen and (max-width: 700px) {
- body {
+  body {
     transform: scale(0.4);
   }
+}
+
+.about-button,
+.hide-button {
+  position: fixed;
+  z-index: 9999 !important;
+  pointer-events: auto !important;
+  margin: 1rem;
+}
+
+.intro-text {
+  margin:1rem;
 }
