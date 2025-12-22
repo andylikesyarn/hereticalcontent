@@ -91,7 +91,6 @@ h1 {
 #video-player-id {
   position: relative;
   width: 63%;
-  left: -8%;
   border-bottom: 80px solid black;
   border-top: 80px solid black;
   z-index: 2;
