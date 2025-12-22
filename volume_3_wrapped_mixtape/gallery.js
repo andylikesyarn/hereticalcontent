@@ -34,7 +34,7 @@ function addArt() {
           <div class="art-media-contributers">${art.Collaborators}</div>
           <div class="art-media-description hidden"><p>${art.topicsummary}</p></div>
   
-          <div class="art-media-description"><p>${art.pretentiousversion}</p></div>
+          <div class="art-media-description-pretentious"><p>${art.pretentiousversion}</p></div>
                   <button class="less-pretentious">click to see less pretentious description</button>
           <button class="hidden more-pretentious">click to see more pretentious description</button></div>
           
@@ -43,6 +43,31 @@ function addArt() {
     position = position + 1;
   }
   document.querySelector(".card0").classList.remove("hidden");
+  const morePretentiousButtons = document.querySelectorAll(".more-pretentious");
+  const morePretentiousDescriptions = document.querySelectorAll(
+    ".art-media-description-pretentious"
+  );
+  const lessPretentiousButtons = document.querySelectorAll(".less-pretentious");
+  const lessPretentiousDescriptions = document.querySelectorAll(
+    ".art-media-description"
+  );
+
+  function eventListenerFunctions() {
+    morePretentiousButtons.forEach((btn) => btn.classList.toggle("hidden"));
+    lessPretentiousButtons.forEach((btn) => btn.classList.toggle("hidden"));
+    morePretentiousDescriptions.forEach((desc) =>
+      desc.classList.toggle("hidden")
+    );
+    lessPretentiousDescriptions.forEach((desc) =>
+      desc.classList.toggle("hidden")
+    );
+  }
+  morePretentiousButtons.forEach((button) => {
+    button.addEventListener("click", eventListenerFunctions);
+  });
+  lessPretentiousButtons.forEach((button) => {
+    button.addEventListener("click", eventListenerFunctions);
+  });
 }
 
 var position = 0;
@@ -91,3 +116,30 @@ function previousCard() {
 
 next.addEventListener("click", nextCard);
 previous.addEventListener("click", previousCard);
+/*
+const morePretentiousButtons = document.querySelectorAll(".more-pretentious");
+const morePretentiousDescriptions = document.querySelectorAll(
+  ".art-media-description-pretentious"
+);
+const lessPretentiousButtons = document.querySelectorAll(".less-pretentious");
+const lessPretentiousDescriptions = document.querySelectorAll(
+  ".art-media-description"
+);
+
+function eventListenerFunctions() {
+  morePretentiousButtons.forEach((btn) => btn.classList.toggle("hidden"));
+  lessPretentiousButtons.forEach((btn) => btn.classList.toggle("hidden"));
+  morePretentiousDescriptions.forEach((desc) =>
+    desc.classList.toggle("hidden")
+  );
+  lessPretentiousDescriptions.forEach((desc) =>
+    desc.classList.toggle("hidden")
+  );
+}
+morePretentiousButtons.forEach((button) => {
+  button.addEventListener("click", eventListenerFunctions);
+});
+lessPretentiousButtons.forEach((button) => {
+  button.addEventListener("click", eventListenerFunctions);
+});
+*/

@@ -254,13 +254,13 @@ h1 {
 
 .book-popup {
   position: fixed;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
+  left: -111%;
+  top: 60%;
+  z-index: 21;
   background-color: #90d5ff;
-  padding: 2rem;
+  padding: 1rem;
   border: 2px solid black;
+  border-radius: 1rem;
 }
 
 .close-button {
@@ -383,7 +383,7 @@ h1 {
   width: 60% !important;
   max-width: 60% !important;
   min-width: 60% !important;
-  height: 100% !important; /* Adjust to your TV screen height */
+  height: 100% !important;
   max-height: 100% !important;
   position: absolute !important;
   box-sizing: border-box !important;
@@ -419,11 +419,34 @@ h1 {
 .about-button,
 .hide-button {
   position: fixed;
-  z-index: 9999 !important;
+  z-index: 20 !important;
   pointer-events: auto !important;
   margin: 1rem;
 }
 
 .intro-text {
-  margin:1rem;
+  margin: 1rem;
+}
+
+.music-popup {
+  position: fixed;
+  left: -75%;
+  top: 130%;
+  z-index: 21;
+  background-color: #90d5ff;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+
+.details-popup{
+   position: fixed;
+  left: -55%;
+  top: 70%;
+  z-index: 21;
+  background-color: #90d5ff;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  width:20%;
 }
