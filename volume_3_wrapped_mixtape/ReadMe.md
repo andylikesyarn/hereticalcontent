@@ -96,13 +96,12 @@ Like other parts of this site, it's nothing particularly complicated in terms of
 
 #### art to-do
 
-- [ ] align within card
-- [ ] round corners of detail blurb
-- [ ] Change position of detail blurb
+- [x] align within card
+- [x] Change position of detail blurb
 - [ ] correct card alignment
-- [ ] format details section
-- [ ] fix bug facts view
-- [ ] fix manic manic manic alignment
+- [x] format details section
+- [x] fix bug facts view
+- [x] fix manic manic manic alignment
 
 ## Ways I could have made this easier for myself:
 

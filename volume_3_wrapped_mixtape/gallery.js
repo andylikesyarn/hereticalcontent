@@ -31,7 +31,7 @@ function addArt() {
       <div class="card card${position} hidden">
           <div class="art-image"><img src="pics/gallery/${art.className}${art.filetype}"/></div>
           <div class="card-text"><div class="art-title"><p>${art.title}</p></div>
-          <div class="art-media-contributers">${art.Collaborators}</div>
+          <div class="art-media-contributors">with media from: ${art.Collaborators}</div>
           <div class="art-media-description hidden"><p>${art.topicsummary}</p></div>
   
           <div class="art-media-description-pretentious"><p>${art.pretentiousversion}</p></div>

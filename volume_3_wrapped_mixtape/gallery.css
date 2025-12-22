@@ -24,14 +24,24 @@ h1 {
 
 .about-button,
 .hide-button {
-  float: left;
+  margin-bottom: 3rem;
 }
 
-.previous,
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+  height: 100px;
+  position: fixed;
+  top: 40%;
+}
+
 .next {
   background-color: #f1f1f1;
   color: black;
   height: 100px;
+  position: fixed;
+  left: 69%;
+  top: 40%;
 }
 
 .round {
@@ -41,7 +51,7 @@ h1 {
 
 .card {
   padding-top: 1rem;
-  margin: 1rem;
+  margin: 1rem auto;
   padding: 2rem;
 }
 
@@ -103,12 +113,6 @@ h1 {
   width: 200%;
 }
 
-.card6 {
-  margin: -7rem;
-  max-height: 70%;
-  max-width: 40%;
-}
-
 .tv-button {
   border-radius: 2%;
   width: 6%;
@@ -162,18 +166,6 @@ h1 {
   margin: 0 auto;
   background-color: black;
   color: aquamarine;
-}
-
-.card2 {
-  position: fixed;
-  top: 40%;
-  left: 73%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  background-color: #90d5ff;
-  padding: 2rem;
-  border: 2px solid black;
-  max-width: 8%;
 }
 
 .tv-channel-number {
@@ -275,10 +267,6 @@ h1 {
   left: 45%;
 }
 
-.about-button,
-.hide-button {
-  float: left;
-}
 .all-channels {
   margin: 0;
   padding: 0;
@@ -386,4 +374,46 @@ h1 {
 
 .gallery-grid {
   display: flex;
+  margin-left: -2rem;
+}
+
+.art-title {
+  font-weight: bold;
+  font-size: 2rem;
+  font-style: normal;
+  padding: 0.5rem;
+}
+
+.art-media-contributors {
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.art-media-description-pretentious,
+.art-media-description {
+  font-style: normal;
+  font-size: 1.4rem;
+  padding: 0.2rem;
+}
+
+.card-text {
+  border: 2px solid gray;
+  border-radius: 0.2rem;
+  margin: 0 auto;
+}
+
+.less-pretentious,
+.more-pretentious {
+  margin: 1rem;
+}
+
+.card0 .art-image {
+  margin-left: 2rem;
+}
+
+.card5 .art-image {
+  margin-left: 5rem;
 }
