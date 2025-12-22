@@ -1,0 +1,422 @@
+body {
+  width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  background-image: url("pics/wallpaper.png");
+  background-color: rgb(34, 34, 83);
+  transform: scale(0.8);
+}
+
+p,
+h1 {
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.intro-text {
+  background-color: #90d5ff;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.hidden {
+  display: none;
+}
+
+.about-button,
+.hide-button {
+  float: left;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+  font-size: 3rem;
+}
+
+.card {
+  padding-top: 1rem;
+  margin: 1rem;
+}
+
+.card1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: #90d5ff;
+  padding: 2rem;
+  border: 2px solid black;
+  max-width: 500px;
+}
+
+.card-image {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-left: -10rem;
+}
+
+.card-image {
+  margin: 0 auto;
+}
+
+.tv-set {
+  position: absolute;
+  left: 0%;
+  top: -50%;
+  width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.video-embed {
+  position: relative;
+  top: 32%;
+  left: -13%;
+  width: 109%;
+}
+
+#video-player-id {
+  position: relative;
+  width: 63%;
+  left: -8%;
+  border-bottom: 80px solid black;
+  border-top: 80px solid black;
+  z-index: 2;
+}
+
+#static-image {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  width: 84%;
+  z-index: 4;
+}
+
+.entertainment-center {
+  position: relative;
+  width: 1000px;
+  height: 1000px;
+}
+
+.tv-stand {
+  position: absolute;
+  z-index: 1;
+  left: -50%;
+  top: 27%;
+  width: 200%;
+}
+
+.card6 {
+  margin: -7rem;
+  max-height: 70%;
+  max-width: 40%;
+}
+
+.tv-button {
+  border-radius: 2%;
+  width: 6%;
+  height: 3%;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.tv-button-down {
+  position: absolute;
+  z-index: 6;
+  left: 78%;
+  top: 60%;
+}
+
+.tv-button-details {
+  position: absolute;
+  z-index: 6;
+  left: 78%;
+  top: 85%;
+  height: 4%;
+  border-radius: 2%;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.cassette-player {
+  position: absolute;
+  z-index: 3;
+  width: 40%;
+  top: 153%;
+  left: 3%;
+}
+
+.tv-button-up {
+  position: absolute;
+  z-index: 6;
+  left: 85%;
+  top: 60%;
+}
+
+.tv-set {
+  position: relative;
+}
+
+.top-screen {
+  width: 13rem;
+  text-align: center;
+  margin: 0 auto;
+  background-color: black;
+  color: aquamarine;
+}
+
+.card2 {
+  position: fixed;
+  top: 40%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: #90d5ff;
+  padding: 2rem;
+  border: 2px solid black;
+  max-width: 8%;
+}
+
+.tv-channel-number {
+  font-size: 6rem;
+  font-family: monospace;
+  font-weight: bold;
+  position: relative;
+  top: -120%;
+  left: 14%;
+  color: #04aa6d;
+  z-index: 4;
+}
+
+.book-button {
+  position: absolute;
+  z-index: 5;
+  border: none;
+  background-color: white;
+  opacity: 0;
+}
+.scythe {
+  transform: rotate(86deg);
+  top: 122%;
+  left: -7%;
+  height: 60px;
+  width: 360px;
+}
+.the-power {
+  transform: rotate(87deg);
+  top: 123%;
+  left: -2%;
+  height: 70px;
+  width: 400px;
+}
+.sunrise-on-the-reaping {
+  transform: rotate(83deg);
+  top: 125%;
+  left: 6%;
+  height: 70px;
+  width: 400px;
+}
+.artemis-fowl {
+  transform: rotate(82deg);
+  top: 125%; /*+165*/
+  left: 14%; /**50*/
+  height: 60px;
+  width: 390px;
+}
+
+.hunger-games {
+  top: 128%;
+  left: 48%;
+  height: 180px;
+  width: 450px;
+}
+
+.broken-earth {
+  top: 108%;
+  left: 50%;
+  height: 180px;
+  width: 400px;
+}
+
+.book-popup {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: #90d5ff;
+  padding: 2rem;
+  border: 2px solid black;
+}
+
+.close-button {
+}
+
+.back-to-home {
+  max-width: 400px;
+  float: left;
+  margin-left: -70%;
+}
+
+.art-ticket {
+  position: absolute;
+  z-index: 3;
+  width: 40%;
+  top: 153%;
+  left: 59%;
+}
+
+.polaroid {
+  position: absolute;
+  z-index: 3;
+  width: 20%;
+  top: 165%;
+  left: 45%;
+}
+
+.about-button,
+.hide-button {
+  float: left;
+}
+.all-channels {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 60%;
+  border: 3rem solid blue;
+  padding: 2rem;
+  background: gray;
+  position: absolute;
+  z-index: 3;
+  top: 4%;
+  left: 19%;
+}
+
+.channel-box {
+  display: grid;
+  grid-template-columns: 4rem 10rem 1fr;
+  gap: 0;
+  border: 2px solid black;
+  height: 2.5rem;
+  padding: 0;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.channel-number,
+.channel-label,
+.marquee-container {
+  margin: 0 !important;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  border-right: 3px solid black;
+}
+
+.channel-number {
+  width: 4rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.channel-label {
+  width: 10rem;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-left: 0.25rem;
+}
+
+.marquee-container {
+  background-color: #d3d3d3;
+  overflow: hidden;
+  white-space: nowrap;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 4px solid black;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+  padding-left: 100%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#guide-row .channel-number {
+  font-size: 0.8rem;
+}
+
+#guide-row .marquee-content {
+  font-size: 1.2rem;
+  animation: none;
+  padding-left: 0.25rem;
+  font-weight: bold;
+}
+
+.tv-set {
+  pointer-events: none;
+}
+.all-channels {
+  width: 60% !important;
+  max-width: 60% !important;
+  min-width: 60% !important;
+  height: 100% !important; /* Adjust to your TV screen height */
+  max-height: 100% !important;
+  position: absolute !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+.art-image img {
+  max-width: 600px;
+}
+
+.cassette-label {
+  position: relative;
+  z-index: 10;
+  left: -27%;
+  top: 12.2%;
+  font-weight: bold;
+  font-size: 1.8rem;
+  background-color: rgb(170, 255, 0);
+  max-width: 19%;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    transform: scale(0.6);
+  }
+}
+
+@media screen and (max-width: 700px) {
+ body {
+    transform: scale(0.4);
+  }
+}

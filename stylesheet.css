@@ -1,9 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Outfit:wght@100..900&family=UnifrakturMaguntia&family=Young+Serif&display=swap');
+
+
 body {
   width: 700px;
   text-align: center;
   margin: 0 auto;
 }
 
+h1 {
+  font-family: UnifrakturMaguntia;
+}
 p,
 h1 {
   width: 500px;
@@ -64,7 +71,13 @@ h1 {
 
 .next,
 .previous {
-
-
 }
 
+.mixtape {
+  max-width: 200px;
+}
+
+.back-to-home {
+  max-width: 400px;
+  margin: 0 auto;
+}
