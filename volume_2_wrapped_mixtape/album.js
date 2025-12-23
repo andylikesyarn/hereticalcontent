@@ -14,22 +14,22 @@ fetch("./media-data.json")
   .then((data) => {
     mediaList = data;
 
-    arts = getArtOnly();
+    pics = getPicsOnly();
     console.log(arts);
-    addArt();
+    //addPics();
   })
   .catch((error) => console.error("JSON load failed:", error));
 
-function getArtOnly() {
-  return mediaList.filter((item) => item.type === "meme-art");
+function getPicsOnly() {
+  return mediaList.filter((item) => item.type === "pic");
 }
-function addArt() {
-  for (const art of arts) {
+function addPics() {
+  for (const pic of pics) {
     const newDiv = document.createElement("div");
     newDiv.innerHTML = `
       <div class="card card">
-          <div class="art-image"><img src="pics/gallery/${art.className}.png"/></div>
-          <div class="art-title">${art.title}</div>
+          <div class="art-image"><img src="pics/gallery/${pic.className}.png"/></div>
+          <div class="art-title">${pic.title}</div>
           <div class="art-media-type"></div>
           <div class="art-media-contributers"></div>
           <div class="art-media-description"></div>

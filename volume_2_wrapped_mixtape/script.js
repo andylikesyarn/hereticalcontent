@@ -9,7 +9,7 @@ const videoSource = document.getElementById("video-source");
 const cassettePlayer = document.querySelector(".cassette-player");
 const musicCard = document.querySelector(".card1");
 const detailsButton = document.querySelector(".tv-button-details");
-const detailsPopup = document.querySelector(".details-popup");
+const detailsPopup = document.querySelector("#details-popup");
 const channelNumber = document.querySelector(".tv-channel-number");
 const bookReportPopup = document.querySelector(".book-popup");
 const bookReport = document.querySelector("#book-report-text");
@@ -86,7 +86,7 @@ function nextVideo() {
   //removes static visibility
   staticRemove.classList.add("hidden");
   //updates notes
-  detailsPopup.innerHTML = `Notes: ${videos[position].notes}`;
+  detailsPopup.innerHTML = `Notes: ${videos[position].topicsummary}`;
   //assigns channel number
   channelNumber.innerHTML = videos[position].channelNumber;
   //runs function to hide channel number aft  er 3 seconds
@@ -104,7 +104,7 @@ function previousVideo() {
   videoPlayer.play();
   staticRemove.classList.add("hidden");
   channelNumber.classList.remove("hidden");
-  detailsPopup.innerHTML = `Notes: ${videos[position].notes}`;
+  detailsPopup.innerHTML = `Notes: ${videos[position].topicsummary}`;
   channelNumber.innerHTML = videos[position].channelNumber;
   hideElementAfterDelay(channelNumber);
 }
@@ -164,8 +164,8 @@ function populateBook(bookClass) {
   )[0];
   document.getElementById(
     "book-report-text"
-  ).innerHTML = `<h2 class="book-report-title">${bookNotes.title}</h2><br><h3 class="book-report-artist">${bookNotes.Artist}</h3><br><a href="${bookNotes.link}"><img src="pics/${bookNotes.className}-cover.png" style="max-height:300px;"/></a>
-  <br> ${bookNotes.whyThis} <br> ${bookNotes.evaluation}`;
+  ).innerHTML = `<h2 class="book-report-title">${bookNotes.title}</h2><h3 class="book-report-artist">${bookNotes.Artist}</h3><a href="${bookNotes.link}"><img src="pics/${bookNotes.className}-cover.png" style="max-height:300px;"/></a>
+  <br> ${bookNotes.whyThis} <br> <br>${bookNotes.evaluation}`;
 }
 
 scythe.addEventListener("click", (e) => {
@@ -200,11 +200,13 @@ artemisFowl.addEventListener("click", (e) => {
 //HUNGER GAMES
 hungerGames.addEventListener("click", (e) => {
   populateBook("hunger-games");
+  bookReportPopup.classList.remove("hidden");
 });
 
 //BROKEN EARTH
 brokenEarth.addEventListener("click", (e) => {
   populateBook("broken-earth");
+  bookReportPopup.classList.remove("hidden");
 });
 
 closeButton.addEventListener("click", (e) => {

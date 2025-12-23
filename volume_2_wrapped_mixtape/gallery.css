@@ -1,0 +1,122 @@
+body {
+  width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: white;
+}
+
+p,
+h1 {
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.intro-text {
+  background-color: #90d5ff;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.hidden {
+  display: none;
+}
+
+.about-button,
+.hide-button {
+  margin-bottom: 3rem;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+  height: 100px;
+  position: absolute;
+  top: 60%;
+}
+
+.next {
+  background-color: #f1f1f1;
+  color: black;
+  height: 100px;
+  position: absolute;
+  top: 60%;
+  left: 74%;
+}
+
+.round {
+  border-radius: 50%;
+  font-size: 3rem;
+}
+
+.card {
+  padding-top: 1rem;
+  margin: 1rem auto;
+  padding: 2rem;
+}
+
+.card-image {
+  width: 80%;
+  margin: 0 auto;
+  margin-left: -10rem;
+}
+
+.card-image {
+  margin: 0 auto;
+}
+
+.marcion {
+  max-width: 200px;
+  float: left;
+  margin-left: -45%;
+}
+
+.art-image img {
+  max-width: 600px;
+}
+
+.gallery-grid {
+  display: flex;
+  margin-left: -2rem;
+}
+
+.art-title {
+  font-weight: bold;
+  font-size: 2rem;
+  font-style: normal;
+  padding: 0.5rem;
+}
+
+.art-media-contributors {
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.art-media-description-pretentious,
+.art-media-description {
+  font-style: normal;
+  font-size: 1.4rem;
+  padding: 0.2rem;
+}
+
+.card-text {
+  border: 2px solid gray;
+  border-radius: 0.2rem;
+  margin: 0 auto;
+}
+
+.less-pretentious,
+.more-pretentious {
+  margin: 1rem;
+}
+
+.card0 .art-image {
+  margin-left: 2rem;
+}
+
+.card5 .art-image {
+  margin-left: 5rem;
+}

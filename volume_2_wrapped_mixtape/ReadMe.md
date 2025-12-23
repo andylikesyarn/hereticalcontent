@@ -61,47 +61,27 @@ The music feature has several moving parts:
 
 Like other parts of this site, it's nothing particularly complicated in terms of code, and it wasn't even particularly tedious. I just used SoundCloud's available embed code, and made the tape deck image a button that opens the SoundCloud music player in a popup window.
 
-### gallery link
+### gallery
 
-- [x] Enable next/prev buttons
-- [x] correct Marcion's position
-- [ ] correct card alignment
-- [ ] format details section
-- [x] toggle description view
-- [x] about feature
+### Album
 
 ## overall to-do
 
 #### tv to-do
-
-- [ ] add bg div
-- [ ] round corners of detail blurb
-- [ ] connect notes to detail blurb
-- [ ] stop TV from moving
-- [ ] Change position of detail blurb
+- [ ] add background div to minimize visibility of bg on channel change
+- [ ] Add link info to the notes
+- [ ] Add artist information to the notes
+- [ ] Add collaborator info to the notes
+- [ ] Prevent TV from changing position when advancing forward from fascism channel to TV guide channel
 
 #### book to-do
-
 - [ ] format cards
 - [ ] align cards
 - [ ] align within card
-- [x] round corners of detail blurb
-- [x] Change position of detail blurb
 
 #### music to-do
-
-- [ ] align within card
-- [x] round corners of detail blurb
-- [x] Change position of detail blurb
-
-#### art to-do
-
-- [x] align within card
-- [x] Change position of detail blurb
-- [ ] correct card alignment
-- [x] format details section
-- [x] fix bug facts view
-- [x] fix manic manic manic alignment
+- [ ] fix details display: either add all notes or remove all notes
+- [ ] connect to API
 
 ## Ways I could have made this easier for myself:
 
@@ -117,4 +97,4 @@ Like other parts of this site, it's nothing particularly complicated in terms of
 
 6. Understanding how YouTube embedding permissions work. I couldn't play embedded YouTube videos in the dev environment and thought this was because the embed permissions differed in Chile (where I'm writing this from), so I did a ridiculous amount of work to find a workaround, and then ONLY AFTER THAT realized the embed code simply didn't work in the dev environment, but the live version works completely fine in the nation of Chile. Lmao.
 
-7. Obviously, it probably would have been easier if I'd used AI more. NO AI-generated images are used; all are memes from around the web, real images I found online, or artist-created Canva elements. I edited all of the images, layered them, and varied opacities by hand (by mouse?). I used Perplexity's Sonar model for several extremely limited tasks: I occasionally give it a snippet of code to screen for obvious logical errors + give me an explanation of my mistakes. I don't really think it's sensible to entirely reject AI as part of web dev, especially as a junior dev who's trying to learn by doing...but I wrote all this damn code by hand; it's the control freak in me. I REALLY wanted this to align exactly with my original vision, which required spending obscene amounts of time editing images and image collages. 
+7. Obviously, it probably would have been easier if I'd used AI more. NO AI-generated images are used; all are memes from around the web, real images I found online, or artist-created Canva elements. I edited all of the images, layered them, and varied opacities by hand (by mouse?). I used Perplexity's Sonar model for several extremely limited tasks: I occasionally give it a snippet of code to screen for obvious logical errors + give me an explanation of my mistakes. I don't really think it's sensible to entirely reject AI as part of web dev, especially as a junior dev who's trying to learn by doing...but I wrote all this damn code by hand; it's the control freak in me. I REALLY wanted this to align exactly with my original vision, which required spending obscene amounts of time editing images and image collages.

@@ -2,7 +2,9 @@ body {
   width: 600px;
   text-align: center;
   margin: 0 auto;
-  background-color: white;
+  background-image: url("pics/wallpaper.png");
+  background-color: rgb(34, 34, 83);
+  transform: scale(0.8);
 }
 
 p,
@@ -24,24 +26,17 @@ h1 {
 
 .about-button,
 .hide-button {
-  margin-bottom: 3rem;
+  float: left;
 }
 
 .previous {
   background-color: #f1f1f1;
   color: black;
-  height: 100px;
-  position: fixed;
-  top: 40%;
 }
 
 .next {
-  background-color: #f1f1f1;
-  color: black;
-  height: 100px;
-  position: fixed;
-  left: 69%;
-  top: 40%;
+  background-color: #04aa6d;
+  color: white;
 }
 
 .round {
@@ -51,8 +46,19 @@ h1 {
 
 .card {
   padding-top: 1rem;
-  margin: 1rem auto;
+  margin: 1rem;
+}
+
+.card1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: #90d5ff;
   padding: 2rem;
+  border: 2px solid black;
+  max-width: 500px;
 }
 
 .card-image {
@@ -85,7 +91,6 @@ h1 {
 #video-player-id {
   position: relative;
   width: 63%;
-  left: -8%;
   border-bottom: 80px solid black;
   border-top: 80px solid black;
   z-index: 2;
@@ -111,6 +116,12 @@ h1 {
   left: -50%;
   top: 27%;
   width: 200%;
+}
+
+.card6 {
+  margin: -7rem;
+  max-height: 70%;
+  max-width: 40%;
 }
 
 .tv-button {
@@ -168,6 +179,18 @@ h1 {
   color: aquamarine;
 }
 
+.card2 {
+  position: fixed;
+  top: 40%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: #90d5ff;
+  padding: 2rem;
+  border: 2px solid black;
+  max-width: 8%;
+}
+
 .tv-channel-number {
   font-size: 6rem;
   font-family: monospace;
@@ -185,6 +208,10 @@ h1 {
   border: none;
   background-color: white;
   opacity: 0;
+}
+
+#book-report-text{
+  text-align:left
 }
 .scythe {
   transform: rotate(86deg);
@@ -231,24 +258,22 @@ h1 {
 
 .book-popup {
   position: fixed;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
+  left: -111%;
+  top: 60%;
+  z-index: 21;
   background-color: #90d5ff;
-  padding: 2rem;
+  padding: 1rem;
   border: 2px solid black;
-  width: 50%;
-  height: 30%;
+  border-radius: 1rem;
 }
 
 .close-button {
 }
 
-.marcion {
-  max-width: 200px;
+.back-to-home {
+  max-width: 400px;
   float: left;
-  margin-left: -45%;
+  margin-left: -70%;
 }
 
 .art-ticket {
@@ -362,7 +387,7 @@ h1 {
   width: 60% !important;
   max-width: 60% !important;
   min-width: 60% !important;
-  height: 100% !important; /* Adjust to your TV screen height */
+  height: 100% !important;
   max-height: 100% !important;
   position: absolute !important;
   box-sizing: border-box !important;
@@ -372,48 +397,64 @@ h1 {
   max-width: 600px;
 }
 
-.gallery-grid {
-  display: flex;
-  margin-left: -2rem;
-}
-
-.art-title {
+.cassette-label {
+  position: relative;
+  z-index: 10;
+  left: -27%;
+  top: 12.2%;
   font-weight: bold;
-  font-size: 2rem;
-  font-style: normal;
-  padding: 0.5rem;
+  font-size: 1.8rem;
+  background-color: rgb(170, 255, 0);
+  max-width: 19%;
 }
 
-.art-media-contributors {
-  font-weight: bold;
-  font-size: 1.1rem;
-  padding: 0.5rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+@media screen and (max-width: 900px) {
+  body {
+    transform: scale(0.6);
+  }
 }
 
-.art-media-description-pretentious,
-.art-media-description {
-  font-style: normal;
-  font-size: 1.4rem;
-  padding: 0.2rem;
+@media screen and (max-width: 700px) {
+  body {
+    transform: scale(0.4);
+  }
 }
 
-.card-text {
-  border: 2px solid gray;
-  border-radius: 0.2rem;
-  margin: 0 auto;
-}
-
-.less-pretentious,
-.more-pretentious {
+.about-button,
+.hide-button {
+  position: fixed;
+  z-index: 20 !important;
+  pointer-events: auto !important;
   margin: 1rem;
 }
 
-.card0 .art-image {
-  margin-left: 2rem;
+.intro-text {
+  margin: 1rem;
 }
 
-.card5 .art-image {
-  margin-left: 5rem;
+.music-popup {
+  position: fixed;
+  left: -75%;
+  top: 130%;
+  z-index: 21;
+  background-color: #90d5ff;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+
+.details-popup {
+  position: fixed;
+  left: -55%;
+  top: 60%;
+  z-index: 21;
+  background-color: #90d5ff;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  width: 30%;
+}
+
+.title-div {
+  display: grid;
 }
