@@ -1,6 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Outfit:wght@100..900&family=UnifrakturMaguntia&family=Young+Serif&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&family=Outfit:wght@100..900&family=UnifrakturMaguntia&family=Young+Serif&display=swap");
 
 body {
   width: 700px;
@@ -69,10 +67,6 @@ h1 {
   margin: 0 auto;
 }
 
-.next,
-.previous {
-}
-
 .mixtape {
   max-width: 200px;
 }
@@ -80,4 +74,8 @@ h1 {
 .back-to-home {
   max-width: 400px;
   margin: 0 auto;
+}
+
+.sexy-jesus {
+  margin-left: -3rem;
 }
